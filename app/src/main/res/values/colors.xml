@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FF1B2331</color>
+    <color name="colorAccent">#FF536DFE</color>
+    <color name="background">#FFF2F2F2</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="offwhite">#99FFFFFF</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="indigo">#536DFE</color>
+    <color name="ripple">#FFF74048</color>
+    <color name="indigo_dark">#425CED</color>
+    <color name="stone">#FF555555</color>
+
+    <!-- notifications -->
+    <color name="tab_bg">#FFE8E8EA</color>
+    <color name="tab_accent">#FF2ECC71</color>
+
+
+    <!-- Search -->
+    <color name="search_text">#FF5E5C5B</color>
+    <color name="search_hint">#FF888E8E</color>
+    <color name="search_border">#FFDEDEDE</color>
+
+    <!-- Text Colours-->
+
+    <color name="small_title_text">#FF4E4C4B</color>
+    <color name="load_more_button">#FF666E6E</color>
+    <color name="secondary_title">#FF9E9E99</color>
+    <color name="title_text">#FF30363C</color>
+    <color name="small_view_more_text">#FF0A8396</color>
+
+    <!-- App Intro Colors-->
+    <color name="blue_dark">#3f51b5</color>
+    <color name="blue">#018dcc</color>
+    <color name="purple_dark">#673ab7</color>
+    <color name="pink">#e91e63</color>
+
+    <!-- rating badge colors-->
+    <color name="rating_bad">#FFE74C3C</color>
+    <color name="rating_ok">#FFF1C40F</color>
+    <color name="rating_good">#FF2ECC71</color>
+
+    <color name="border_light">#FFE8E8E8</color>
+
+    <!-- language -->
+    <color name="green_overlay">#770AAD83</color>
+    <color name="button_green">#FF28CB75</color>
+    <color name="black">#555555</color>
+    <color name="liz">#777777</color>
+
+
+</resources>
