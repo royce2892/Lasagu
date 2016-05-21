@@ -5,13 +5,99 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="16dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="LASAGU"
+        android:textColor="@color/ripple"
+        android:textSize="48sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/ach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lead"
+        android:text="ACHIEVEMENTS" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lead"
+        android:orientation="horizontal"
+        android:layout_above="@+id/start_game"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/lead_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEAD10" />
+
+
+        <Button
+            android:id="@+id/lead_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEAD25" />
+
+
+        <Button
+            android:id="@+id/lead_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEAD50" />
+
+
+        <Button
+            android:id="@+id/lead_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEAD100" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/start_game"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/break_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+
+        <Button
+            android:id="@+id/break_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25" />
+
+
+        <Button
+            android:id="@+id/break_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50" />
+
+
+        <Button
+            android:id="@+id/break_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100" />
+
+    </LinearLayout>
 
 </RelativeLayout>

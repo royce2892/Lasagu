@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "884130162083",
+    "project_id": "lasagu-99248523"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884130162083:android:f7a7a9371352b6ff",
+        "android_client_info": {
+          "package_name": "com.ripple.lasagu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884130162083-nhpr2oakn81vmfinc1j492aq4of4agnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ripple.lasagu",
+            "certificate_hash": "6FB53C1768325C9B5CC5353E63B903BC8CB261FC"
+          }
+        },
+        {
+          "client_id": "884130162083-dcjf7p6pag5jmirvnsfu063u04ij9q5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFiA25dVHZJ2WUSuiuyrEZx46OrnbaRnQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

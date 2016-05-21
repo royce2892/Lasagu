@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_id">884130162083</string>
+    <string name="package_name">com.ripple.lasagu</string>
+    <string name="achievement_level1">CgkIo8uO0t0ZEAIQAQ</string>
+    <string name="achievement_level2">CgkIo8uO0t0ZEAIQAg</string>
+    <string name="achievement_level3">CgkIo8uO0t0ZEAIQAw</string>
+    <string name="achievement_level4">CgkIo8uO0t0ZEAIQBA</string>
+    <string name="achievement_level5">CgkIo8uO0t0ZEAIQBQ</string>
+    <string name="leaderboard_break_10">CgkIo8uO0t0ZEAIQBg</string>
+    <string name="leaderboard_break_25">CgkIo8uO0t0ZEAIQBw</string>
+    <string name="leaderboard_break_50">CgkIo8uO0t0ZEAIQCA</string>
+    <string name="leaderboard_break_100">CgkIo8uO0t0ZEAIQCQ</string>
+</resources>
