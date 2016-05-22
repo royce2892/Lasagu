@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.Games;
-import com.google.example.games.basegameutils.BaseGameUtils;
+import com.ripple.lasagu.game.BaseGameUtils;
 
 import java.util.Locale;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.example.games.basegameutils;
+package com.ripple.lasagu.game;
 
 import android.content.Intent;
 import android.os.Bundle;
