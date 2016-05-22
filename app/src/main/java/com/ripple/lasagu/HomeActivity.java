@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -15,7 +14,7 @@ import com.google.android.gms.games.Games;
 import com.google.android.gms.games.GamesStatusCodes;
 import com.google.android.gms.games.leaderboard.LeaderboardVariant;
 import com.google.android.gms.games.leaderboard.Leaderboards;
-import com.google.example.games.basegameutils.BaseGameUtils;
+import com.ripple.lasagu.game.BaseGameUtils;
 
 /**
  * Created by royce on 18-05-2016.
@@ -51,6 +50,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
         findViewById(R.id.lead_25).setOnClickListener(this);
         findViewById(R.id.lead_50).setOnClickListener(this);
         findViewById(R.id.lead_100).setOnClickListener(this);
+        findViewById(R.id.sign_out).setOnClickListener(this);
 
         initPrefs();
 
@@ -102,6 +102,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     public void onConnected(Bundle connectionHint) {
         findViewById(R.id.sign_in).setVisibility(View.GONE);
+        findViewById(R.id.sign_out).setVisibility(View.VISIBLE);
     }
 
 
@@ -121,6 +122,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
                     RC_SIGN_IN, "Error")) {
                 mResolvingConnectionFailure = false;
                 findViewById(R.id.sign_in).setVisibility(View.VISIBLE);
+                findViewById(R.id.sign_out).setVisibility(View.GONE);
             }
         }
     }
@@ -129,6 +131,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
     public void onConnectionSuspended(int i) {
         mGoogleApiClient.connect();
         findViewById(R.id.sign_in).setVisibility(View.VISIBLE);
+        findViewById(R.id.sign_out).setVisibility(View.GONE);
     }
 
     protected void onActivityResult(int requestCode, int resultCode,
@@ -140,16 +143,24 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
                 mGoogleApiClient.connect();
             } else {
 
-                 BaseGameUtils.showActivityResultError(this,
-                        requestCode, resultCode, R.string.accept);
+                BaseGameUtils.showActivityResultError(this,
+                        requestCode, resultCode, R.string.signin_other_error);
             }
-        }
+        } else
+            super.onActivityResult(requestCode, resultCode, intent);
+
     }
 
     private void signInClicked() {
         mSignInClicked = true;
         mGoogleApiClient.connect();
     }
+
+    private void signOutClicked() {
+        Games.signOut(mGoogleApiClient);
+        mGoogleApiClient.disconnect();
+        findViewById(R.id.sign_in).setVisibility(View.VISIBLE);
+        findViewById(R.id.sign_out).setVisibility(View.GONE);    }
 
     @Override
     public void onClick(View v) {
@@ -184,6 +195,9 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
                 break;
             case R.id.sign_in:
                 signInClicked();
+                break;
+            case R.id.sign_out:
+                signOutClicked();
                 break;
             case R.id.ach:
                 startActivityForResult(Games.Achievements.getAchievementsIntent(mGoogleApiClient), 3);

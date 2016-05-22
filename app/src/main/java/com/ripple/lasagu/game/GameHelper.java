@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.example.games.basegameutils;
+package com.ripple.lasagu.game;
 
 import java.util.ArrayList;
 
@@ -31,7 +31,6 @@ import android.util.Log;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.common.api.Api.ApiOptions.NoOptions;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.drive.Drive;
 import com.google.android.gms.games.Games;
