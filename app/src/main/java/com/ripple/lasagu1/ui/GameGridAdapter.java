@@ -1,4 +1,4 @@
-package com.ripple.lasagu1;
+package com.ripple.lasagu1.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,6 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.ripple.lasagu1.R;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -17,7 +19,7 @@ import java.util.Random;
 /**
  * Created by royce on 15-05-2016.
  */
-public class GridAdapter extends BaseAdapter {
+public class GameGridAdapter extends BaseAdapter {
 
     private Context context;
     private List<Integer> items = new ArrayList<>(9);
@@ -27,7 +29,7 @@ public class GridAdapter extends BaseAdapter {
     Random random;
     ResultPass resultPass;
 
-    public GridAdapter(Context context, int height, ResultPass resultPass) {
+    public GameGridAdapter(Context context, int height, ResultPass resultPass) {
         this.context = context;
         this.resultPass = resultPass;
         mInflater = (LayoutInflater) context

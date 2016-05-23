@@ -1,4 +1,4 @@
-package com.ripple.lasagu1;
+package com.ripple.lasagu1.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.ripple.lasagu1;
+package com.ripple.lasagu1.ui;
 
 /**
  * Created by royce on 15-05-2016.
