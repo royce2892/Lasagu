@@ -114,12 +114,17 @@ public class GameFragment extends Fragment implements ResultPass {
     private void handleScore() {
         if (!timeLessMode) {
             long current = PreferenceManager.getInstance(getContext()).getLong(Constants.TIMED);
-            mListener.onNewHighScore(timeLessMode);
-            if (millis < current) {
+            if (current == 0) {
                 PreferenceManager.getInstance(getContext()).putLong(Constants.TIMED, millis);
                 Toast.makeText(getActivity(), "New record updated with time " + millis + " ms", Toast.LENGTH_SHORT).show();
-            } else
-                Toast.makeText(getActivity(), "Missed record score by " + (millis - current) + " ms", Toast.LENGTH_SHORT).show();
+                mListener.onNewHighScore(timeLessMode);
+            } else {
+                if (millis < current) {
+                    PreferenceManager.getInstance(getContext()).putLong(Constants.TIMED, millis);
+                    Toast.makeText(getActivity(), "New record updated with time " + millis + " ms", Toast.LENGTH_SHORT).show();
+                } else
+                    Toast.makeText(getActivity(), "Missed record score by " + (millis - current) + " ms", Toast.LENGTH_SHORT).show();
+            }
         } else {
             int current = PreferenceManager.getInstance(getContext()).getInt(Constants.TIMELESS);
             PreferenceManager.getInstance(getContext()).put(Constants.TIMELESS, ballsLeft);
