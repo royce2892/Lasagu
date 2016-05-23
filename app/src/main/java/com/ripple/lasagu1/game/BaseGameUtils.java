@@ -1,4 +1,4 @@
-package com.ripple.lasagu.game;
+package com.ripple.lasagu1.game;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,7 +10,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.games.GamesActivityResultCodes;
-import com.ripple.lasagu.R;
+import com.ripple.lasagu1.R;
 
 public class BaseGameUtils {
 

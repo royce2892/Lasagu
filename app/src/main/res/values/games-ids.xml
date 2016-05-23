@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
 <resources>
-    <string name="app_id">884130162083</string>
-    <string name="package_name">com.ripple.lasagu</string>
-    <string name="achievement_level1">CgkIo8uO0t0ZEAIQAQ</string>
-    <string name="achievement_level2">CgkIo8uO0t0ZEAIQAg</string>
-    <string name="achievement_level3">CgkIo8uO0t0ZEAIQAw</string>
-    <string name="achievement_level4">CgkIo8uO0t0ZEAIQBA</string>
-    <string name="achievement_level5">CgkIo8uO0t0ZEAIQBQ</string>
-    <string name="leaderboard_break_10">CgkIo8uO0t0ZEAIQBg</string>
-    <string name="leaderboard_break_25">CgkIo8uO0t0ZEAIQBw</string>
-    <string name="leaderboard_break_50">CgkIo8uO0t0ZEAIQCA</string>
-    <string name="leaderboard_break_100">CgkIo8uO0t0ZEAIQCQ</string>
+    <string name="app_id">1098301871804</string>
+    <string name="package_name">com.ripple.lasagu1</string>
+    <string name="achievement_sign_in_with_google_plus">CgkIvK2Sv_sfEAIQAw</string>
+    <string name="achievement_first_timed_win">CgkIvK2Sv_sfEAIQBA</string>
+    <string name="achievement_timed_in_a_minute">CgkIvK2Sv_sfEAIQBQ</string>
+    <string name="achievement_timed_in_45s">CgkIvK2Sv_sfEAIQCA</string>
+    <string name="achievement_timed_in_30s">CgkIvK2Sv_sfEAIQBg</string>
+    <string name="achievement_timed_in_25s">CgkIvK2Sv_sfEAIQBw</string>
+    <string name="achievement_timed_in_20s">CgkIvK2Sv_sfEAIQCQ</string>
+    <string name="achievement_timed_in_15s">CgkIvK2Sv_sfEAIQCg</string>
+    <string name="leaderboard_timed">CgkIvK2Sv_sfEAIQAQ</string>
+    <string name="leaderboard_timeless">CgkIvK2Sv_sfEAIQAg</string>
 </resources>

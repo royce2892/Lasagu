@@ -1,4 +1,4 @@
-package com.ripple.lasagu;
+package com.ripple.lasagu1;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -62,5 +62,10 @@ public class PreferenceManager {
         return preferences.getLong(key, 0);
     }
 
+    public void clear() {
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear();
+        editor.commit();
+    }
 
 }

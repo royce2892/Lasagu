@@ -23,10 +23,10 @@
     <Button
         android:id="@+id/sign_out"
         android:layout_width="wrap_content"
-        android:text="SIGN OUT"
-        android:visibility="gone"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:text="SIGN OUT"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/ach"
@@ -41,38 +41,22 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/start_game"
         android:orientation="horizontal"
-        android:weightSum="4">
+        android:weightSum="2">
 
         <Button
-            android:id="@+id/lead_10"
+            android:id="@+id/timed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="L10" />
+            android:text="LEAD TIMED" />
 
 
         <Button
-            android:id="@+id/lead_25"
+            android:id="@+id/timeless"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="L25" />
-
-
-        <Button
-            android:id="@+id/lead_50"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="L50" />
-
-
-        <Button
-            android:id="@+id/lead_100"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="L100" />
+            android:text="LEAD TIMELESS" />
 
     </LinearLayout>
 
@@ -83,38 +67,30 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:weightSum="4">
+        android:weightSum="3">
 
         <Button
-            android:id="@+id/break_10"
+            android:id="@+id/play_timed"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="10" />
+            android:text="PLAY TIMED" />
 
 
         <Button
-            android:id="@+id/break_25"
+            android:id="@+id/play_timeless"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="25" />
+            android:text="PLAY TIMELESS" />
 
 
         <Button
-            android:id="@+id/break_50"
+            android:id="@+id/practice"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="50" />
-
-
-        <Button
-            android:id="@+id/break_100"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="100" />
+            android:text="PRACTICE" />
 
     </LinearLayout>
 

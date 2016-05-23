@@ -1,4 +1,4 @@
-package com.ripple.lasagu;
+package com.ripple.lasagu1;
 
 import android.app.Application;
 

@@ -1,4 +1,4 @@
-package com.ripple.lasagu.game;
+package com.ripple.lasagu1.game;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.util.Log;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.games.GamesActivityResultCodes;
-import com.ripple.lasagu.R;
+import com.ripple.lasagu1.R;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

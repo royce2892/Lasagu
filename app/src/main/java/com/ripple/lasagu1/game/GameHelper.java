@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ripple.lasagu.game;
+package com.ripple.lasagu1.game;
 
 import java.util.ArrayList;
 
